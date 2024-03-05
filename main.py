@@ -3,9 +3,6 @@ import bakeryItemType
 import config
 import inventory
 
-# import bakeryItem
-# import inventory
-
 
 if config.running_env.lower() == "test":
     # bakeryItemType - init
@@ -32,4 +29,3 @@ if config.running_env.lower() == "test":
         inventory_list=inventory_list, bakery_item_list=bakery_item_list,
         stock_inc=3, stock=1, good_for_days_inc=3, good_for_days=3, days_timedelta=9)
     inventory.init_inventory_table(inventory_list)
-    print("after git commit")

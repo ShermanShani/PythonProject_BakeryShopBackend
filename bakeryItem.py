@@ -25,7 +25,7 @@ class BakeryItem:
         # self.expDate=expDate
         self.item_des = item_des
 
-        input_types = bakeryItemType.get_bakery_item_types()
+        input_types = bakeryItemType.get_bakery_item_types(False)
         num = np.array(input_types)
         reshaped = num.reshape(7, 3)
         print("BakeryItem created, now choose item category from the table bellow:\n",

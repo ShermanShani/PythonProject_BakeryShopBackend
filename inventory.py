@@ -59,7 +59,7 @@ class Inventory:
 def init_inventory_list(bakery_item_list: list, inventory_list: list, stock: int, stock_inc: int,
                         good_for_days_inc: int, days_timedelta: int, good_for_days: int):
     pr_date = date.today() - timedelta(days=days_timedelta)
-    print("len(bakery_items_list): ", len(bakery_item_list) )
+    print("len(bakery_items_list): ", len(bakery_item_list))
     for item in bakery_item_list:
         inventory_list.append(
             {'product_id': "",
